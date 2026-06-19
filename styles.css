@@ -162,10 +162,14 @@ h1 {
 /* ===== Games page ===== */
 .games-hero { display: block; }
 .games-list { padding-top: 16px; padding-bottom: 16px; }
-.game { padding: 36px 0; border-bottom: 1px solid var(--border); }
-.game:first-child { padding-top: 4px; }
+.studio-divider { margin: 48px 0 6px; padding-top: 22px; border-top: 2px solid var(--accent); }
+.studio-divider:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.studio-divider h2 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); }
+.studio-meta { color: var(--accent-2); font-family: "Space Grotesk", sans-serif; font-size: 0.85rem; margin-top: 4px; }
+.studio-note { color: var(--text-dim); font-size: 0.92rem; max-width: 78ch; margin: 12px 0 4px; }
+.game { padding: 28px 0; border-bottom: 1px solid var(--border); }
 .game:last-child { border-bottom: 0; }
-.game-head h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); }
+.game-head h3 { font-size: clamp(1.25rem, 3vw, 1.6rem); }
 .game-meta { color: var(--accent-2); font-family: "Space Grotesk", sans-serif; font-size: 0.9rem; margin-top: 6px; }
 .game-work { color: var(--text-dim); margin: 16px 0 24px; max-width: 78ch; }
 .game-work em { color: var(--gold); font-style: normal; font-weight: 600; }
