@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grant Arundell — Lead Game Programmer & Designer</title>
+  <meta name="description" content="Grant Arundell — lead programmer, game designer, and engineering leader with 22 years shipping games across mobile, console, PC, and web. Rockstar, EA, Proof of Play, and more." />
+  <meta property="og:title" content="Grant Arundell — Lead Game Programmer & Designer" />
+  <meta property="og:description" content="22 years shipping games. Lead programmer, game designer, and engineering leader." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://basementheroes.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="brand"><span class="brand-mark">▲</span> Grant Arundell</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#code">Code</a>
+      <a href="#experience">Experience</a>
+      <a href="#games">Games</a>
+      <a href="#skills">Skills</a>
+      <a href="#praise">Praise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Lead Programmer · Game Designer · Team Leader</p>
+        <h1>Grant Arundell</h1>
+        <p class="hero-tagline">22 years making good games — across mobile, console, PC, VR, and web.</p>
+        <p class="hero-sub">Engineering leader and game designer who brings order to chaos: shipping production
+          systems, mentoring teams, and turning complex features into plans that just work.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/grant-basementheroes/code-portfolio">View Code Portfolio</a>
+          <a class="btn btn-ghost" href="mailto:grant@basementheroes.net">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="assets/img/avatar-voxel.png" alt="Voxel avatar of Grant Arundell" width="340" height="340" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <p class="section-kicker">// about</p>
+      <h2>About</h2>
+      <div class="about-top">
+        <div class="about-bio">
+          <p>I'm a passionate, industry-experienced game programmer and designer who has worked on
+            dozens of titles across multiple platforms, console generations, and genres. My objective
+            hasn't changed since I got into the industry 22 years ago: <strong>make good games</strong>,
+            and get better at it every year.</p>
+          <p>I lead engineering teams as both an individual contributor and a mentor, with deep
+            experience in production architecture, live ops, and the systems that hold a game together —
+            monetization, analytics, UI, and tooling. I hold a Bachelor's degree in Mathematics with a
+            focus on Computer Science from the University of Waterloo.</p>
+        </div>
+        <img class="portrait" src="assets/img/grant.jpg" alt="Photo of Grant Arundell" />
+      </div>
+      <ul class="facts">
+        <li><span class="facts-num">22</span> years in the industry</li>
+        <li><span class="facts-num">7</span> studios — incl. Rockstar &amp; EA</li>
+        <li><span class="facts-num">30+</span> shipped titles</li>
+        <li><span class="facts-label">B.Math, CS</span> University of Waterloo</li>
+        <li><span class="facts-label">Based in</span> Burnaby, BC, Canada</li>
+      </ul>
+    </section>
+
+    <!-- CODE PORTFOLIO -->
+    <section id="code" class="section">
+      <p class="section-kicker">// code</p>
+      <h2>Code Portfolio</h2>
+      <p class="section-intro">A curated set of reusable C# systems I've built for production
+        mobile games — provider-agnostic middleware with an emphasis on the parts that are actually hard:
+        async lifecycles that span app restarts, unreliable third-party SDKs, and low-overhead profiling.
+        <a href="https://github.com/grant-basementheroes/code-portfolio">Full source on GitHub →</a></p>
+      <div class="cards">
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/IAP">
+          <h3>In-App Purchases</h3>
+          <p>Unity IAP v5 / StoreKit 2 wrapper built around server-first purchase validation, redelivery recovery, and cross-platform receipts.</p>
+        </a>
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/VideoAds">
+          <h3>Video Ads</h3>
+          <p>Rewarded / interstitial ad mediation façade with preloading, an iOS callback-hang safety net, and a local-video fallback.</p>
+        </a>
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/Analytics">
+          <h3>Analytics</h3>
+          <p>Provider-agnostic analytics façade — log once, fan out to any number of backends behind a clean interface.</p>
+        </a>
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/Benchmark">
+          <h3>Profiling System</h3>
+          <p>Nestable code profiler — per-frame self/child timing &amp; memory, Unity Profiler integration, CSV + Chrome-trace export. Zero cost when compiled out.</p>
+        </a>
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/UI.ScreenManagement">
+          <h3>UI Screen Management</h3>
+          <p>Full screen-stack manager — main/modal/overlay/loading layers, fixed-tier z-ordering, and memory-aware screen caching.</p>
+        </a>
+        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/ScreenWipe">
+          <h3>Screen Wipe</h3>
+          <p>Camera-based screen-transition effect with screenshot-freeze backdrop, custom shaders, and resolution-independent math.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <p class="section-kicker">// experience</p>
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="job">
+          <div class="job-head"><h3>Lead Unity Programmer</h3><span class="job-date">Oct 2023 — Present</span></div>
+          <p class="job-co">Proof of Play <span class="job-meta">· Fully Remote · Pirate Nation (Web3), Shiba Story Go (iOS/Android)</span></p>
+          <ul>
+            <li>Lead the engineering team as an individual contributor, manager, and mentor.</li>
+            <li>Built a web client in Unity backed by Web3 smart-contract / blockchain technology, balancing open player data ownership with traditional F2P mechanics.</li>
+            <li>Principal programmer on Shiba Story Go from prototype through full live ops; owned the UI (Unity UI Toolkit) and architectural systems — push notifications, video ads, and analytics.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Senior Lead Programmer</h3><span class="job-date">Oct 2021 — Oct 2023</span></div>
+          <p class="job-co">Budge Studios <span class="job-meta">· Montreal, QC · Barbie Dreamhouse Adventure · Central Technology &amp; Tools</span></p>
+          <ul>
+            <li>Set technology and tooling direction for the studio; identified and built shared tech across teams.</li>
+            <li>Managed a live ops team of 10 programmers against an aggressive release schedule.</li>
+            <li>Balanced production support, tech debt, and new-feature development across disciplines.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Lead Technical Developer / CTO</h3><span class="job-date">Sep 2016 — Sep 2021</span></div>
+          <p class="job-co">Session Games <span class="job-meta">· Vancouver, BC · Red Bull series, Snowboarding: The Next Phase (Switch), and more</span></p>
+          <ul>
+            <li>Developed, designed, published, and maintained multiple Unity titles across mobile and Switch.</li>
+            <li>Owned technical hiring; evaluated third-party tech and estimated engineering cost of game and feature designs.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Generalist / Lead Programmer</h3><span class="job-date">Aug 2012 — Sep 2016</span></div>
+          <p class="job-co">Roadhouse Interactive <span class="job-meta">· Vancouver, BC · Warhammer 40K: Carnage, Family Guy Online, and more</span></p>
+          <ul>
+            <li>Developed and shipped multiple mobile and PC titles in Unity / C#, from leading a team to being the sole programmer on prototypes.</li>
+            <li>Lead Programmer on the award-nominated <em>Warhammer 40K: Carnage</em>.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Game Designer / Lead Scripter</h3><span class="job-date">Aug 2007 — Aug 2012</span></div>
+          <p class="job-co">Rockstar Games <span class="job-meta">· Vancouver, BC · Max Payne 3 (Xbox 360, PS3, PC)</span></p>
+          <ul>
+            <li>Designed and implemented several levels of <em>Max Payne 3</em> from paper design through shipping — AI, difficulty, cutscenes, custom animation, audio, and progression.</li>
+            <li>Managed a team of 5 scripters for 2 years and coordinated scripting across 4 international studios.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-head"><h3>Associate Software Engineer / QA</h3><span class="job-date">Apr 2004 — Aug 2007</span></div>
+          <p class="job-co">Electronic Arts <span class="job-meta">· Burnaby, BC · FIFA, The Sims, Medal of Honor, Need for Speed</span></p>
+          <ul>
+            <li>Programmed gameplay-testing cheats and tools and integrated debugging software across a range of EA Sports and EA titles.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="section">
+      <p class="section-kicker">// shipped</p>
+      <h2>Selected Shipped Titles</h2>
+      <ul class="games-grid">
+        <li>Max Payne 3</li>
+        <li>Warhammer 40K: Carnage</li>
+        <li>Barbie Dreamhouse Adventure</li>
+        <li>Pirate Nation</li>
+        <li>Shiba Story Go</li>
+        <li>Red Bull Bike Unchained</li>
+        <li>Snowboarding: The Next Phase</li>
+        <li>Skate Video Tycoon</li>
+        <li>FIFA 06 / 08</li>
+        <li>The Sims 2: Pets</li>
+        <li>Def Jam: Fight for NY</li>
+        <li>Need for Speed Underground 2</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <p class="section-kicker">// skills</p>
+      <h2>Skills &amp; Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>C#, Lua, XML, proprietary scripting languages</p>
+        </div>
+        <div class="skill-group">
+          <h3>Engines &amp; Frameworks</h3>
+          <p>Unity 3D / Unity 6, Unity UI Toolkit, Unity IAP / StoreKit 2, Nakama</p>
+        </div>
+        <div class="skill-group">
+          <h3>Platforms</h3>
+          <p>iOS, Android, Nintendo Switch, VR, PC (Steam), macOS, Windows, Web</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <p>Git, Perforce, SVN, Visual Studio, Xcode, Android Studio, JIRA, Claude</p>
+        </div>
+        <div class="skill-group">
+          <h3>Leadership</h3>
+          <p>Team leadership &amp; mentoring, live ops, cross-discipline collaboration, technical planning &amp; estimation</p>
+        </div>
+        <div class="skill-group">
+          <h3>Design</h3>
+          <p>Level &amp; systems design, prototyping, gameplay feel, F2P economy &amp; mechanics</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section id="praise" class="section">
+      <p class="section-kicker">// recommendations</p>
+      <h2>What Colleagues Say</h2>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>"Grant's superpower is his ability to bring order to chaos and to find the structure and key components of a complex development plan."</p>
+          <cite>Principal Engineer who worked alongside Grant on two games at Proof of Play</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"Grant is a problem solver at the highest level. You can throw any challenge at him and he'll take it with a smile and give his all to provide a good result."</p>
+          <cite>Producer who worked with Grant at Proof of Play</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"He can straddle both the design and engineering disciplines, and I'd easily work with him again on any future game project."</p>
+          <cite>Game Director who managed Grant at Roadhouse Interactive</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>"A passionate designer, talented scripter, and loyal teammate — a unifying force on our team through his fierce optimism, level-headedness, and approachability."</p>
+          <cite>Teammate who worked directly with Grant on Max Payne 3 at Rockstar Games</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <p class="section-kicker">// contact</p>
+      <h2>Let's build something</h2>
+      <p class="section-intro">Open to lead and senior game-engineering roles. The fastest way to reach me:</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="mailto:grant@basementheroes.net">grant@basementheroes.net</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/grantarundell/">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/grant-basementheroes">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Grant Arundell · Built with hand-written HTML &amp; CSS</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
