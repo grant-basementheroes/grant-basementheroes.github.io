@@ -78,6 +78,18 @@
     .spark { position: fixed; pointer-events: none; z-index: 9999; font-size: 14px;
       animation: fade .8s linear forwards; }
     @keyframes fade { to { opacity: 0; transform: translateY(-14px) scale(.4); } }
+    @media (max-width: 600px) {
+      body { cursor: default; }
+      .wrap { margin: 12px auto; }
+      .title { letter-spacing: 0; line-height: 1.05; }
+      .top-marquee { font-size: 15px; }
+      .firebar { height: 48px; }
+      .message { padding: 14px; font-size: 1.05rem; margin: 14px auto; }
+      .enter-btn { padding: 14px 18px; font-size: 1.35rem; }
+      .counter { font-size: 1.1rem; letter-spacing: 2px; }
+      .webring { font-size: 13px; }
+      .badge { font-size: 11px; padding: 3px 6px; }
+    }
   </style>
 </head>
 <body>
@@ -86,7 +98,7 @@
   </div>
 
   <div class="wrap">
-    <div class="title">GRANT&nbsp;ARUNDELL</div>
+    <div class="title">GRANT ARUNDELL</div>
     <div class="firebar" aria-hidden="true"></div>
 
     <div class="message">
