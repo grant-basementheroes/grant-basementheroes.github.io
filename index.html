@@ -3,280 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grant Arundell — Lead Game Programmer & Designer</title>
-  <meta name="description" content="Grant Arundell — lead programmer, game designer, and engineering leader with 22 years shipping games across mobile, console, PC, and web. Rockstar, EA, Proof of Play, and more." />
-  <meta property="og:title" content="Grant Arundell — Lead Game Programmer & Designer" />
-  <meta property="og:description" content="22 years shipping games. Lead programmer, game designer, and engineering leader." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://basementheroes.net" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>~*~ Welcome to Grant Arundell's Homepage ~*~</title>
+  <meta name="description" content="Grant Arundell has been making games since the internet looked like THIS. Enter the site." />
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      background-color: #0a0024;
+      background-image:
+        radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
+        radial-gradient(1px 1px at 90px 140px, #aaddff, transparent),
+        radial-gradient(2px 2px at 160px 70px, #ffff66, transparent),
+        radial-gradient(1px 1px at 230px 200px, #ffffff, transparent),
+        radial-gradient(1px 1px at 290px 110px, #ff99ff, transparent),
+        radial-gradient(2px 2px at 50px 250px, #ffffff, transparent);
+      background-repeat: repeat;
+      background-size: 320px 320px;
+      font-family: "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
+      color: #00ff66;
+      text-align: center;
+      cursor: crosshair;
+      overflow-x: hidden;
+    }
+    a { color: #ffff00; }
+    .top-marquee {
+      background: #000080; color: #00ff00; border-bottom: 3px ridge #00ffff;
+      font-family: "Times New Roman", serif; font-size: 18px; padding: 6px 0;
+    }
+    .wrap { max-width: 760px; margin: 18px auto; padding: 0 10px; }
+    .title {
+      font-size: clamp(2.2rem, 9vw, 4.5rem); font-weight: bold; letter-spacing: 2px;
+      background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33ff00, #00ffff, #3366ff, #cc33ff, #ff0000);
+      background-size: 200% auto;
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      animation: rainbow 6s linear infinite;
+      text-shadow: 0 0 2px rgba(255,255,255,.4);
+      margin: 6px 0;
+    }
+    @keyframes rainbow { to { background-position: 200% center; } }
+    .subtitle { font-size: 1.3rem; color: #ff66ff; text-shadow: 2px 2px 0 #000; }
+    .blink { animation: blink 1s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+    .construction {
+      margin: 16px auto; padding: 8px; max-width: 560px; color: #000; font-weight: bold;
+      font-family: "Arial", sans-serif; border: 3px solid #000;
+      background: repeating-linear-gradient(45deg, #ffcc00, #ffcc00 18px, #000 18px, #000 36px);
+      background-size: 51px 51px; animation: march 1.2s linear infinite;
+    }
+    .construction span { background: #ffcc00; padding: 3px 8px; }
+    @keyframes march { to { background-position: 51px 0; } }
+    .message {
+      font-family: "Times New Roman", serif; font-size: clamp(1.1rem, 3.2vw, 1.6rem);
+      color: #00ffff; background: #1a0033; border: 4px ridge #ff00ff;
+      padding: 18px; margin: 18px auto; max-width: 580px; line-height: 1.6;
+    }
+    .message b { color: #ffff00; font-size: 1.25em; }
+    .enter-btn {
+      display: inline-block; margin: 14px 0; padding: 18px 34px;
+      font-family: "Impact", "Arial Black", sans-serif; font-size: clamp(1.4rem, 5vw, 2.2rem);
+      color: #ffffff; text-decoration: none;
+      background: linear-gradient(#22cc22, #006600); border: 6px outset #00ff00;
+      text-shadow: 2px 2px 0 #000; letter-spacing: 1px;
+    }
+    .enter-btn:active { border-style: inset; }
+    .enter-btn:hover { background: linear-gradient(#33ff33, #009900); }
+    .countdown { font-size: 1rem; color: #ffffff; margin-top: 6px; }
+    .countdown b { color: #ff3333; font-size: 1.4em; }
+    hr.fancy { border: 0; height: 6px; margin: 18px auto; max-width: 600px;
+      background: repeating-linear-gradient(90deg, #ff0000 0 10px, #ffff00 10px 20px, #00ff00 20px 30px, #00ffff 30px 40px, #ff00ff 40px 50px); }
+    .counter { font-family: "Courier New", monospace; display: inline-block; background: #000;
+      color: #00ff00; border: 2px inset #00aa00; padding: 4px 8px; letter-spacing: 4px; font-size: 1.3rem; }
+    .badges { margin: 16px auto; font-family: "Arial", sans-serif; font-size: 12px; color: #cccccc; }
+    .badge { display: inline-block; background: #c0c0c0; color: #000; border: 2px outset #fff;
+      padding: 4px 8px; margin: 4px; font-weight: bold; }
+    .webring { font-family: "Times New Roman", serif; color: #ffff66; margin: 14px auto; }
+    .tunes { background: #333; color: #0f0; border: 3px outset #888; font-family: monospace;
+      font-size: 14px; padding: 6px 12px; cursor: pointer; margin: 8px; }
+    .footer { font-size: 12px; color: #8888aa; font-family: "Arial", sans-serif; margin: 24px 0 40px; }
+    .spark { position: fixed; pointer-events: none; z-index: 9999; font-size: 14px;
+      animation: fade .8s linear forwards; }
+    @keyframes fade { to { opacity: 0; transform: translateY(-14px) scale(.4); } }
+  </style>
 </head>
 <body>
-  <header class="nav">
-    <a href="#top" class="brand"><span class="brand-mark">▲</span> Grant Arundell</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#games">Games</a>
-      <a href="#code">Code</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#praise">Praise</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="top-marquee">
+    <marquee scrollamount="6">★彡 WELCOME TO MY HOMEPAGE 彡★ &nbsp; You are visitor number — see below! &nbsp; ✉ Sign my guestbook! &nbsp; 🎮 Now playing: 22 years of shipping games &nbsp; ★彡 WELCOME 彡★</marquee>
+  </div>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <p class="kicker">Lead Programmer · Game Designer · Team Leader</p>
-        <h1>Grant Arundell</h1>
-        <p class="hero-tagline">22 years making good games — across mobile, console, PC, VR, and web.</p>
-        <p class="hero-sub">Engineering leader and game designer who brings order to chaos: shipping production
-          systems, mentoring teams, and turning complex features into plans that just work.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="https://github.com/grant-basementheroes/code-portfolio">View Code Portfolio</a>
-          <a class="btn btn-ghost" href="mailto:grant@basementheroes.net">Get in Touch</a>
-        </div>
-      </div>
-      <div class="hero-avatar">
-        <img src="assets/img/avatar-voxel.png" alt="Voxel avatar of Grant Arundell" width="340" height="340" />
-      </div>
-    </section>
+  <div class="wrap">
+    <p class="subtitle"><span class="blink">~*~</span> Grant Arundell's Personal Web Page <span class="blink">~*~</span></p>
+    <div class="title">BASEMENT&nbsp;HEROES</div>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <p class="section-kicker">// about</p>
-      <h2>About</h2>
-      <div class="about-top">
-        <div class="about-bio">
-          <p>I'm a passionate, industry-experienced game programmer and designer who has worked on
-            dozens of titles across multiple platforms, console generations, and genres. My objective
-            hasn't changed since I got into the industry 22 years ago: <strong>make good games</strong>,
-            and get better at it every year.</p>
-          <p>I lead engineering teams as both an individual contributor and a mentor, with deep
-            experience in production architecture, live ops, and the systems that hold a game together —
-            monetization, analytics, UI, and tooling. I hold a Bachelor's degree in Mathematics with a
-            focus on Computer Science from the University of Waterloo.</p>
-        </div>
-        <img class="portrait" src="assets/img/grant.jpg" alt="Photo of Grant Arundell" />
-      </div>
-      <ul class="facts">
-        <li><span class="facts-num">22</span> years in the industry</li>
-        <li><span class="facts-num">7</span> studios — incl. Rockstar &amp; EA</li>
-        <li><span class="facts-num">30+</span> shipped titles</li>
-        <li><span class="facts-label">B.Math, CS</span> University of Waterloo</li>
-        <li><span class="facts-label">Based in</span> Burnaby, BC, Canada</li>
-      </ul>
-    </section>
+    <div class="construction"><span>🚧 UNDER CONSTRUCTION 🚧</span></div>
 
-    <!-- GAMES -->
-    <section id="games" class="section">
-      <p class="section-kicker">// highlight reel</p>
-      <h2>Career Highlight Reel</h2>
-      <p class="section-intro">A few favourites across two decades — from where it started to a brand-new
-        Web3 world.</p>
-      <div class="reel">
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/XsXqntszTuM" title="Def Jam: Fight for NY" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Def Jam: Fight for NY <span>Electronic Arts</span></p>
-        </div>
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/4Uc_dbG7MR8" title="Max Payne 3" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Max Payne 3 <span>Rockstar Games</span></p>
-        </div>
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/dzLG-DNNDJY" title="Food Battle: The Game" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Food Battle: The Game <span>Roadhouse Interactive</span></p>
-        </div>
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/JwH8sGcEPj8" title="Snowboarding: The Next Phase" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Snowboarding: The Next Phase <span>Session Games</span></p>
-        </div>
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/59Tz3TeLhIk" title="Barbie Dreamhouse Adventures" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Barbie Dreamhouse Adventure <span>Budge Studios</span></p>
-        </div>
-        <div class="reel-item">
-          <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/BYPMcGjJbsU" title="Shiba Story Go" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <p class="reel-cap">Shiba Story Go <span>Proof of Play</span></p>
-        </div>
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="games.html">See All My Games →</a>
-      </div>
-    </section>
+    <div class="message">
+      I've been making games since the internet looked like <b>THIS.</b>
+      <br /><br />
+      From a <i>Rockstar</i> blockbuster to today's mobile and Web3 worlds — 22 years and counting.
+      <br /><br />
+      <span class="blink" style="color:#ff3333;">► NEW! ◄</span> Click below to warp to the present.
+    </div>
 
-    <!-- CODE PORTFOLIO -->
-    <section id="code" class="section">
-      <p class="section-kicker">// code</p>
-      <h2>Code Portfolio</h2>
-      <p class="section-intro">A curated set of reusable C# systems I've built for production
-        mobile games — provider-agnostic middleware with an emphasis on the parts that are actually hard:
-        async lifecycles that span app restarts, unreliable third-party SDKs, and low-overhead profiling.
-        <a href="https://github.com/grant-basementheroes/code-portfolio">Full source on GitHub →</a></p>
-      <div class="cards">
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/IAP">
-          <h3>In-App Purchases</h3>
-          <p>Unity IAP v5 / StoreKit 2 wrapper built around server-first purchase validation, redelivery recovery, and cross-platform receipts.</p>
-        </a>
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/VideoAds">
-          <h3>Video Ads</h3>
-          <p>Rewarded / interstitial ad mediation façade with preloading, an iOS callback-hang safety net, and a local-video fallback.</p>
-        </a>
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/Analytics">
-          <h3>Analytics</h3>
-          <p>Provider-agnostic analytics façade — log once, fan out to any number of backends behind a clean interface.</p>
-        </a>
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/Benchmark">
-          <h3>Profiling System</h3>
-          <p>Nestable code profiler — per-frame self/child timing &amp; memory, Unity Profiler integration, CSV + Chrome-trace export. Zero cost when compiled out.</p>
-        </a>
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/UI.ScreenManagement">
-          <h3>UI Screen Management</h3>
-          <p>Full screen-stack manager — main/modal/overlay/loading layers, fixed-tier z-ordering, and memory-aware screen caching.</p>
-        </a>
-        <a class="card" href="https://github.com/grant-basementheroes/code-portfolio/tree/main/ScreenWipe">
-          <h3>Screen Wipe</h3>
-          <p>Camera-based screen-transition effect with screenshot-freeze backdrop, custom shaders, and resolution-independent math.</p>
-        </a>
-      </div>
-    </section>
+    <a class="enter-btn" href="home.html">►►► ENTER MY SITE ◄◄◄</a>
+    <p class="countdown">Auto-warping to the present in <b id="cd">15</b> seconds…</p>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <p class="section-kicker">// experience</p>
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="job">
-          <div class="job-head"><h3>Lead Unity Programmer</h3><span class="job-date">Oct 2023 — Present</span></div>
-          <p class="job-co">Proof of Play <span class="job-meta">· Fully Remote · Pirate Nation (Web3), Shiba Story Go (iOS/Android)</span></p>
-          <ul>
-            <li>Lead the engineering team as an individual contributor, manager, and mentor.</li>
-            <li>Built a web client in Unity backed by Web3 smart-contract / blockchain technology, balancing open player data ownership with traditional F2P mechanics.</li>
-            <li>Principal programmer on Shiba Story Go from prototype through full live ops; owned the UI (Unity UI Toolkit) and architectural systems — push notifications, video ads, and analytics.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-head"><h3>Senior Lead Programmer</h3><span class="job-date">Oct 2021 — Oct 2023</span></div>
-          <p class="job-co">Budge Studios <span class="job-meta">· Montreal, QC · Barbie Dreamhouse Adventure · Central Technology &amp; Tools</span></p>
-          <ul>
-            <li>Set technology and tooling direction for the studio; identified and built shared tech across teams.</li>
-            <li>Managed a live ops team of 10 programmers against an aggressive release schedule.</li>
-            <li>Balanced production support, tech debt, and new-feature development across disciplines.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-head"><h3>Lead Technical Developer / CTO</h3><span class="job-date">Sep 2016 — Sep 2021</span></div>
-          <p class="job-co">Session Games <span class="job-meta">· Vancouver, BC · Red Bull series, Snowboarding: The Next Phase (Switch), and more</span></p>
-          <ul>
-            <li>Developed, designed, published, and maintained multiple Unity titles across mobile and Switch.</li>
-            <li>Owned technical hiring; evaluated third-party tech and estimated engineering cost of game and feature designs.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-head"><h3>Generalist / Lead Programmer</h3><span class="job-date">Aug 2012 — Sep 2016</span></div>
-          <p class="job-co">Roadhouse Interactive <span class="job-meta">· Vancouver, BC · Warhammer 40K: Carnage, Family Guy Online, and more</span></p>
-          <ul>
-            <li>Developed and shipped multiple mobile and PC titles in Unity / C#, from leading a team to being the sole programmer on prototypes.</li>
-            <li>Lead Programmer on the award-nominated <em>Warhammer 40K: Carnage</em>.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-head"><h3>Game Designer / Lead Scripter</h3><span class="job-date">Aug 2007 — Aug 2012</span></div>
-          <p class="job-co">Rockstar Games <span class="job-meta">· Vancouver, BC · Max Payne 3 (Xbox 360, PS3, PC)</span></p>
-          <ul>
-            <li>Designed and implemented several levels of <em>Max Payne 3</em> from paper design through shipping — AI, difficulty, cutscenes, custom animation, audio, and progression.</li>
-            <li>Managed a team of 5 scripters for 2 years and coordinated scripting across 4 international studios.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-head"><h3>Associate Software Engineer / QA</h3><span class="job-date">Apr 2004 — Aug 2007</span></div>
-          <p class="job-co">Electronic Arts <span class="job-meta">· Burnaby, BC · FIFA, The Sims, Medal of Honor, Need for Speed</span></p>
-          <ul>
-            <li>Programmed gameplay-testing cheats and tools and integrated debugging software across a range of EA Sports and EA titles.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <hr class="fancy" />
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <p class="section-kicker">// skills</p>
-      <h2>Skills &amp; Tools</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <p>C#, Lua, XML, proprietary scripting languages</p>
-        </div>
-        <div class="skill-group">
-          <h3>Engines &amp; Frameworks</h3>
-          <p>Unity 3D / Unity 6, Unity UI Toolkit, Unity IAP / StoreKit 2, Nakama</p>
-        </div>
-        <div class="skill-group">
-          <h3>Platforms</h3>
-          <p>iOS, Android, Nintendo Switch, VR, PC (Steam), macOS, Windows, Web</p>
-        </div>
-        <div class="skill-group">
-          <h3>Tools</h3>
-          <p>Git, Perforce, SVN, Visual Studio, Xcode, Android Studio, JIRA, Claude</p>
-        </div>
-        <div class="skill-group">
-          <h3>Leadership</h3>
-          <p>Team leadership &amp; mentoring, live ops, cross-discipline collaboration, technical planning &amp; estimation</p>
-        </div>
-        <div class="skill-group">
-          <h3>Design</h3>
-          <p>Level &amp; systems design, prototyping, gameplay feel, F2P economy &amp; mechanics</p>
-        </div>
-      </div>
-    </section>
+    <p>You are visitor # <span class="counter" id="hits">000042</span></p>
 
-    <!-- RECOMMENDATIONS -->
-    <section id="praise" class="section">
-      <p class="section-kicker">// recommendations</p>
-      <h2>What Colleagues Say</h2>
-      <div class="quotes">
-        <blockquote class="quote">
-          <p>"Grant's superpower is his ability to bring order to chaos and to find the structure and key components of a complex development plan."</p>
-          <cite>Principal Engineer who worked alongside Grant on two games at Proof of Play</cite>
-        </blockquote>
-        <blockquote class="quote">
-          <p>"Grant is a problem solver at the highest level. You can throw any challenge at him and he'll take it with a smile and give his all to provide a good result."</p>
-          <cite>Producer who worked with Grant at Proof of Play</cite>
-        </blockquote>
-        <blockquote class="quote">
-          <p>"He can straddle both the design and engineering disciplines, and I'd easily work with him again on any future game project."</p>
-          <cite>Game Director who managed Grant at Roadhouse Interactive</cite>
-        </blockquote>
-        <blockquote class="quote">
-          <p>"A passionate designer, talented scripter, and loyal teammate — a unifying force on our team through his fierce optimism, level-headedness, and approachability."</p>
-          <cite>Teammate who worked directly with Grant on Max Payne 3 at Rockstar Games</cite>
-        </blockquote>
-      </div>
-    </section>
+    <button class="tunes" id="tunes" type="button">🎵 PLAY MIDI</button>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-contact">
-      <p class="section-kicker">// contact</p>
-      <h2>Let's build something</h2>
-      <p class="section-intro">Open to lead and senior game-engineering roles. The fastest way to reach me:</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="mailto:grant@basementheroes.net">grant@basementheroes.net</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/grantarundell/">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/grant-basementheroes">GitHub</a>
-      </div>
-    </section>
-  </main>
+    <div class="webring">‹ prev &nbsp;•&nbsp; ◈ THE GAME DEV WEB RING ◈ &nbsp;•&nbsp; next ›</div>
 
-  <footer class="footer">
-    <p>© <span id="year">2026</span> Grant Arundell · Built with hand-written HTML &amp; CSS</p>
-  </footer>
+    <div class="badges">
+      <span class="badge">Best viewed in Netscape Navigator 4.0</span>
+      <span class="badge">Optimized for 800 × 600</span>
+      <span class="badge">HTML 3.2 ✓</span>
+      <span class="badge">Made with Notepad</span>
+    </div>
 
-  <script src="main.js"></script>
+    <p class="footer">© 1997–2026 Grant Arundell · This page has been lovingly hand-coded · <a href="home.html">skip intro</a></p>
+  </div>
+
+  <script>
+    // ── 15-second auto-warp to the real site ──
+    var n = 15, cd = document.getElementById('cd');
+    var timer = setInterval(function () {
+      n -= 1;
+      if (cd) cd.textContent = n;
+      if (n <= 0) { clearInterval(timer); window.location.href = 'home.html'; }
+    }, 1000);
+
+    // ── Classic visitor hit counter (localStorage) ──
+    try {
+      var v = parseInt(localStorage.getItem('bh_hits') || '41', 10) + 1;
+      localStorage.setItem('bh_hits', v);
+      document.getElementById('hits').textContent = String(v).padStart(6, '0');
+    } catch (e) {}
+
+    // ── Sparkle cursor trail ──
+    var last = 0;
+    document.addEventListener('mousemove', function (e) {
+      var now = Date.now();
+      if (now - last < 40) return;
+      last = now;
+      var s = document.createElement('span');
+      s.className = 'spark';
+      s.textContent = ['✦', '✧', '⋆', '✩'][Math.floor((now / 40) % 4)];
+      s.style.left = e.clientX + 'px';
+      s.style.top = e.clientY + 'px';
+      s.style.color = ['#ff0', '#0ff', '#f0f', '#fff'][Math.floor((now / 40) % 4)];
+      document.body.appendChild(s);
+      setTimeout(function () { s.remove(); }, 800);
+    });
+
+    // ── Cheesy WebAudio "MIDI" loop ──
+    var actx = null, step = 0, seq = null, playing = false;
+    var notes = [262, 330, 392, 523, 392, 330, 294, 349]; // little major-key noodle
+    var btn = document.getElementById('tunes');
+    btn.addEventListener('click', function () {
+      if (!playing) {
+        actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+        playing = true; btn.textContent = '🔇 STOP MIDI';
+        seq = setInterval(function () {
+          var o = actx.createOscillator(), g = actx.createGain();
+          o.type = 'square'; o.frequency.value = notes[step % notes.length];
+          g.gain.value = 0.06; o.connect(g); g.connect(actx.destination);
+          o.start(); o.stop(actx.currentTime + 0.18);
+          step += 1;
+        }, 220);
+      } else {
+        playing = false; btn.textContent = '🎵 PLAY MIDI';
+        clearInterval(seq);
+      }
+    });
+  </script>
 </body>
 </html>
