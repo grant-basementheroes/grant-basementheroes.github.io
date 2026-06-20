@@ -43,14 +43,6 @@
     .subtitle { font-size: 1.3rem; color: #ff66ff; text-shadow: 2px 2px 0 #000; }
     .blink { animation: blink 1s steps(2, start) infinite; }
     @keyframes blink { to { visibility: hidden; } }
-    .construction {
-      margin: 16px auto; padding: 8px; max-width: 560px; color: #000; font-weight: bold;
-      font-family: "Arial", sans-serif; border: 3px solid #000;
-      background: repeating-linear-gradient(45deg, #ffcc00, #ffcc00 18px, #000 18px, #000 36px);
-      background-size: 51px 51px; animation: march 1.2s linear infinite;
-    }
-    .construction span { background: #ffcc00; padding: 3px 8px; }
-    @keyframes march { to { background-position: 51px 0; } }
     .message {
       font-family: "Times New Roman", serif; font-size: clamp(1.1rem, 3.2vw, 1.6rem);
       color: #00ffff; background: #1a0033; border: 4px ridge #ff00ff;
@@ -91,9 +83,7 @@
 
   <div class="wrap">
     <p class="subtitle"><span class="blink">~*~</span> Grant Arundell's Personal Web Page <span class="blink">~*~</span></p>
-    <div class="title">BASEMENT&nbsp;HEROES</div>
-
-    <div class="construction"><span>🚧 UNDER CONSTRUCTION 🚧</span></div>
+    <div class="title">GRANT&nbsp;ARUNDELL</div>
 
     <div class="message">
       I've been making games since the internet looked like <b>THIS.</b>
@@ -135,8 +125,8 @@
 
     // ── Classic visitor hit counter (localStorage) ──
     try {
-      var v = parseInt(localStorage.getItem('bh_hits') || '41', 10) + 1;
-      localStorage.setItem('bh_hits', v);
+      var v = parseInt(localStorage.getItem('visit_count') || '41', 10) + 1;
+      localStorage.setItem('visit_count', v);
       document.getElementById('hits').textContent = String(v).padStart(6, '0');
     } catch (e) {}
 
