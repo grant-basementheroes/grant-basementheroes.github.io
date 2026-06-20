@@ -71,15 +71,8 @@
     .tunes { background: #333; color: #0f0; border: 3px outset #888; font-family: monospace;
       font-size: 14px; padding: 6px 12px; cursor: pointer; margin: 8px; }
     .footer { font-size: 12px; color: #8888aa; font-family: "Arial", sans-serif; margin: 24px 0 40px; }
-    .flames { font-size: 1.8rem; line-height: 1; letter-spacing: 2px; margin: 12px 0; }
-    .flames span { display: inline-block; transform-origin: bottom center;
-      animation: flicker .4s ease-in-out infinite alternate; }
-    .flames span:nth-child(2n) { animation-duration: .55s; }
-    .flames span:nth-child(3n) { animation-duration: .3s; }
-    @keyframes flicker {
-      from { transform: scaleY(.9) rotate(-5deg); filter: drop-shadow(0 0 2px #ff8800); }
-      to   { transform: scaleY(1.2) rotate(5deg); filter: drop-shadow(0 -3px 7px #ff3300); }
-    }
+    .firebar { height: 75px; max-width: 620px; margin: 12px auto;
+      background: url("assets/img/fire.gif") repeat-x center; image-rendering: pixelated; }
     .spin { display: inline-block; animation: spin 2.4s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .spark { position: fixed; pointer-events: none; z-index: 9999; font-size: 14px;
@@ -94,7 +87,7 @@
 
   <div class="wrap">
     <div class="title">GRANT&nbsp;ARUNDELL</div>
-    <div class="flames" aria-hidden="true"><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span></div>
+    <div class="firebar" aria-hidden="true"></div>
 
     <div class="message">
       I've been making games since the internet looked like <b>THIS.</b>
@@ -104,7 +97,7 @@
       <span class="blink" style="color:#ff3333;">► NEW! ◄</span> Click below to warp to the present.
     </div>
 
-    <div class="flames" aria-hidden="true"><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span><span>🔥</span></div>
+    <div class="firebar" aria-hidden="true"></div>
     <a class="enter-btn" href="home.html">►►► ENTER MY SITE ◄◄◄</a>
     <p class="countdown">Auto-warping to the present in <b id="cd">15</b> seconds…</p>
 
@@ -123,7 +116,7 @@
       <span class="badge">Made with Notepad</span>
     </div>
 
-    <p class="footer">© 2004–2026 Grant Arundell · This page has been lovingly hand-coded · <a href="home.html">skip intro</a></p>
+    <p class="footer">© 2004–2026 Grant Arundell · <a href="home.html">skip intro</a></p>
   </div>
 
   <script>
