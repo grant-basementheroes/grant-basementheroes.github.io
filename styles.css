@@ -159,6 +159,11 @@ h1 {
 /* ===== Footer ===== */
 .footer { border-top: 1px solid var(--border); padding: 30px 24px; text-align: center; color: var(--text-dim); font-size: 0.85rem; }
 
+/* ===== Highlight reel (home) ===== */
+.reel { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.reel-cap { margin-top: 10px; font-family: "Space Grotesk", sans-serif; font-weight: 600; color: var(--text); }
+.reel-cap span { display: block; font-family: "Inter", sans-serif; font-weight: 400; font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
+
 /* ===== Games page ===== */
 .games-hero { display: block; }
 .games-list { padding-top: 16px; padding-bottom: 16px; }
