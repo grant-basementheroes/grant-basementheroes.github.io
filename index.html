@@ -80,12 +80,15 @@
     @keyframes fade { to { opacity: 0; transform: translateY(-14px) scale(.4); } }
     @media (max-width: 600px) {
       body { cursor: default; }
-      .wrap { margin: 12px auto; }
-      .title { letter-spacing: 0; line-height: 1.05; }
-      .top-marquee { font-size: 15px; }
-      .firebar { height: 48px; }
-      .message { padding: 14px; font-size: 1.05rem; margin: 14px auto; }
-      .enter-btn { padding: 14px 18px; font-size: 1.35rem; }
+      .wrap { margin: 8px auto; }
+      .title { font-size: 2rem; letter-spacing: 0; line-height: 1.05; margin: 4px 0; }
+      .top-marquee { font-size: 15px; padding: 4px 0; }
+      .firebar { height: 34px; margin: 8px auto; }
+      .message { padding: 10px 12px; font-size: 0.92rem; line-height: 1.35; margin: 8px auto; }
+      .message br + br { display: none; }
+      .enter-btn { display: block; white-space: nowrap; letter-spacing: 0;
+        font-size: clamp(0.9rem, 4.6vw, 1.4rem); padding: 12px 8px; margin: 8px auto; }
+      .countdown { margin-top: 4px; font-size: 0.95rem; }
       .counter { font-size: 1.1rem; letter-spacing: 2px; }
       .webring { font-size: 13px; }
       .badge { font-size: 11px; padding: 3px 6px; }
